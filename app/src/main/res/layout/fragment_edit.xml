@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background_light"
+    android:focusable="false"
+    android:focusableInTouchMode="true"
+    tools:context=".ui.edit.EditFragment">
+
+    <EditText
+        android:id="@+id/textview_edit_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="99"
+        android:autoText="false"
+        android:ems="10"
+        android:hint="Game name"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="?android:attr/textColorPrimaryInverse"
+        android:textColorHint="?android:attr/textColorSecondaryInverse"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:imeOptions="actionSend" />
+
+    <ScrollView
+        android:id="@+id/scrollview_statements"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/layout_margin_LR"
+        android:layout_marginRight="@dimen/layout_margin_LR"
+        android:backgroundTint="@color/color_background_light"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_edit_head">
+
+        <LinearLayout
+            android:id="@+id/statement_selection_box"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/layout_margin_LR"
+        android:layout_marginRight="@dimen/layout_margin_LR"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/input_add_statement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="99"
+                android:autoText="false"
+                android:ems="10"
+                android:hint="@string/hint_add_statement"
+                android:inputType="text"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:textColor="?android:attr/textColorPrimaryInverse"
+                android:textColorHint="?android:attr/textColorSecondaryInverse" />
+
+            <Button
+                android:id="@+id/button_add_statement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorAccent"
+                android:text="@string/button_add" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button_remove_statement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorAccent"
+                android:text="@string/button_remove_statement" />
+        </TableRow>
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#54086B</color>
+    <color name="colorPrimaryDark">#440059</color>
+    <color name="colorAccent">#00BEC5</color>
+
+    <color name="color_button_unfocused">#c7c7c7</color>
+    <color name="color_button_focused">@color/colorAccent</color>
+
+    <color name="color_background_dark">#050833</color>
+    <color name="color_background_light">#34353C</color>
+
+    <color name="color_red">#FFB2AD</color>
+
+    <color name="color_info_text">#fff</color>
+    <color name="color_info_background">#333333</color>
+
+    <color name="color_text_main">#fff</color>
+    <color name="color_text_secondary">#E1E1E1</color>
+
+
+</resources>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/popupLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:background="@color/color_info_background"
+        android:alpha="0.9"
+        android:padding="@dimen/margin_tabular"
+        android:scrollbarSize="0dp"
+        android:scrollbarThumbVertical="?android:attr/scrollbarTrackVertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/infoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_info_background"
+            android:orientation="vertical"
+            android:textColor="#fff">
+
+            <TextView
+                android:id="@+id/textView_infoHead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/info_header"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/color_info_text"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider31"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="@dimen/margin_divider"
+                android:alpha="0.3"
+                android:background="@color/color_info_text" />
+
+            <TextView
+                android:id="@+id/textView_selectHead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/info_select_game_head"
+                android:textColor="@color/color_info_text"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView_select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/margin_tabular"
+                android:paddingEnd="0dp"
+                android:text="@string/info_select_game"
+                android:textColor="@color/color_info_text"
+                android:textSize="@dimen/size_info_text" />
+
+            <View
+                android:id="@+id/divider32"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="@dimen/margin_divider"
+                android:alpha="0.3"
+                android:background="@color/color_info_text" />
+
+            <TextView
+                android:id="@+id/textView_playHead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/info_play_game_head"
+                android:textColor="@color/color_info_text"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView_play"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/margin_tabular"
+                android:paddingEnd="0dp"
+                android:text="@string/info_play_game"
+                android:textColor="@color/color_info_text"
+                android:textSize="@dimen/size_info_text" />
+
+            <View
+                android:id="@+id/divider33"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="@dimen/margin_divider"
+                android:alpha="0.3"
+                android:background="@color/color_info_text" />
+
+            <TextView
+                android:id="@+id/textView_editHead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/info_edit_game_head"
+                android:textColor="@color/color_info_text"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/margin_tabular"
+                android:paddingEnd="0dp"
+                android:text="@string/info_edit_game"
+                android:textColor="@color/color_info_text"
+                android:textSize="@dimen/size_info_text" />
+
+
+            <View
+                android:id="@+id/divider34"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="@dimen/margin_divider"
+                android:alpha="0.3"
+                android:background="@color/color_info_text"
+                android:paddingStart="@dimen/margin_tabular"
+                android:paddingEnd="@dimen/margin_tabular" />
+
+            <TextView
+                android:id="@+id/textView_edit_example"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/margin_tabular"
+                android:paddingEnd="0dp"
+                android:text="@string/info_edit_game_example"
+                android:textColor="@color/color_info_text"
+                android:textSize="@dimen/size_info_text" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

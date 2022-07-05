@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Monijuomapeli</string>
+    <string name="title_select">Select game</string>
+    <string name="title_play">Play</string>
+    <string name="title_edit">Edit game</string>
+    <string name="hint_add_game">New game name</string>
+    <string name="button_add">Add</string>
+    <string name="button_remove_game">Remove selected game</string>
+    <string name="button_remove_confirm">Are You sure?</string>
+    <string name="hint_add_statement">Add new statement</string>
+    <string name="button_remove_statement">Remove selected statement</string>
+    <string name="lipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+
+    <string name="info_header">HELP</string>
+    <string name="info_select_game_head">@string/title_select</string>
+    <string name="info_play_game_head">@string/title_play</string>
+    <string name="info_edit_game_head">@string/title_edit</string>
+    <string name="info_select_game" formatted="true">
+        Write a game name and create it with the ADD-button.
+        All games are listed on the screen and you can switch between them by clicking.
+        \nGames can be deleted with the REMOVE button (This can not be undone!).
+    </string>
+    <string name="info_play_game" formatted="true">
+        Game is played by clicking the screen.
+        New statements are randomly selected from the library and shown in the screen.
+        \nStatements can be added to the current game in the edit-tab.
+    </string>
+    <string name="info_edit_game" formatted="true">
+        Game can be renamed by clicking the game name and typing a new name. (Remember to hit enter on the keyboard to apply the name)
+        This creates a new copy of the current game.
+        \nThe old game can be deleted in the select game -tab.
+        New statements can be added by typing in the new statement -field. Statements can also be selected and deleted with the REMOVE button.
+        \nMultiple choices can be added to the statement with square brackets. Choices are separated with commas.
+    </string>
+    <string name="info_edit_game_example" formatted="true">
+        EXAMPLE:
+        \n\t\t It\'s a [, beautiful, horrible] day!
+        \ncreates 3 different possibilities for the statement:
+        \n\t\t It\'s a day!
+        \n\t\t It\'s a beautiful day!
+        \n\t\t It\'s a horrible a day!
+        \nOne of these statements is selected randomly in each round.
+    </string>
+</resources>
